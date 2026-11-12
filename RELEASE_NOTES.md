@@ -1,5 +1,9 @@
 # Release notes
 
+## 0.1.1 — 2026-11-11
+
+- Shorter, simpler README.
+
 ## 0.0.2 — 2026-11-11
 
 - Tab now jumps between sections (buttons, tower rules, output file) and Shift+Tab goes back. Inside a section use ↑↓ to move between fields and ←→ along the buttons. Each section remembers where you left off.
