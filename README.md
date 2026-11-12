@@ -1,17 +1,27 @@
 # Buddy Tower
 
-Small, fast layers print badly because they don't get time to cool. Buddy Tower reads a sliced
-Bambu Studio / Orca `.gcode.3mf`, works out how long every layer takes, and designs a round tower
-to print next to your part. The tower gets wider where the part's layers are fast, so every layer
-takes at least your minimum time.
+**Minimum layer time cooling tower generator for Bambu Studio and OrcaSlicer.**
 
-You get a STEP file. Drop it on the same plate in Bambu Studio and re-slice.
+![Buddy Tower terminal UI showing layer times and the generated tower](docs/screenshot.png)
 
-## Build
+Small, fast layers print badly on a 3D printer because they don't get time to cool. Instead of
+letting the slicer slow down, Buddy Tower reads a sliced `.gcode.3mf` from Bambu Studio or
+OrcaSlicer, works out how long every layer takes, and designs a round sacrificial tower to print
+next to your part. The tower gets wider where the part's layers are fast, so every layer takes at
+least your minimum layer time.
+
+You get a STEP file. Drop it on the same plate and re-slice.
+
+## Download
+
+Grab the build for Windows, macOS or Linux from
+[Releases](https://github.com/mmmlinux/Buddy-Tower/releases), or build it yourself with Go:
 
 ```sh
 go build -o buddy-tower .
 ```
+
+On macOS, if the downloaded binary is blocked, run `xattr -d com.apple.quarantine buddy-tower`.
 
 ## Use
 

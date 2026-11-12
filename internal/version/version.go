@@ -2,4 +2,4 @@
 package version
 
 // Version is MAJOR.COMMIT.CHANGE.
-const Version = "0.1.1"
+const Version = "0.2.1"

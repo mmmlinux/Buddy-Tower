@@ -1,5 +1,10 @@
 # Release notes
 
+## 0.2.1 — 2026-11-12
+
+- Ready-made downloads for Windows, macOS and Linux (Intel and ARM) on the GitHub Releases page, built automatically for each new version.
+- README now shows a screenshot and has a Download section.
+
 ## 0.1.1 — 2026-11-11
 
 - Shorter, simpler README.
