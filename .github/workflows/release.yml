@@ -20,8 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # Windows/Linux build with current Go. macOS builds with Go 1.24, the last
-      # release that supports macOS 11 Big Sur (newer Go needs macOS 12/13+).
       - uses: actions/setup-go@v7
         with:
           go-version: "1.27.x"
@@ -55,13 +53,11 @@ jobs:
             if [ "$arch" = amd64 ]; then
               archlabel=x86_64; [ "$os" = darwin ] && archlabel=intel
             fi
-            toolchain=local; [ "$os" = darwin ] && toolchain=go1.24.13
             name="buddy-tower_${VERSION}_${label}_${archlabel}"
             dir="dist/$name"
             mkdir -p "$dir"
             exe=buddy-tower; [ "$os" = windows ] && exe=buddy-tower.exe
-            GOTOOLCHAIN=$toolchain GOOS=$os GOARCH=$arch CGO_ENABLED=0 \
-              go build -trimpath -ldflags "-s -w" -o "$dir/$exe" .
+            GOOS=$os GOARCH=$arch CGO_ENABLED=0 go build -trimpath -ldflags "-s -w" -o "$dir/$exe" .
             cp LICENSE README.md THIRD_PARTY_NOTICES.md "$dir/"
             if [ "$os" = windows ]; then
               (cd dist && zip -qr "$name.zip" "$name")

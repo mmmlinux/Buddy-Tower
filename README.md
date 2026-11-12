@@ -15,15 +15,15 @@ You get a STEP file. Drop it on the same plate and re-slice.
 ## Download
 
 Grab the build for Windows, macOS or Linux from
-[Releases](https://github.com/mmmlinux/Buddy-Tower/releases), or build it yourself with Go:
+[Releases](https://github.com/mmmlinux/Buddy-Tower/releases), or build it yourself with Go 1.24.2
+or newer (any Go from 1.21 on will download 1.24.2 for you automatically):
 
 ```sh
 go build -o buddy-tower .
 ```
 
 Pick `x86_64` for most PCs, `arm64` for ARM machines and Apple Silicon Macs, and `intel` for
-Intel Macs. The Mac builds need macOS 11 Big Sur or later; if macOS blocks the download, run
-`xattr -d com.apple.quarantine buddy-tower`.
+Intel Macs. If macOS blocks the download, run `xattr -d com.apple.quarantine buddy-tower`.
 
 ## Use
 

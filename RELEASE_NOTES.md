@@ -1,5 +1,10 @@
 # Release notes
 
+## 0.2.3 — 2026-11-12
+
+- Mac downloads are built with the current Go release again, like Windows and Linux.
+- README notes the oldest Go you can build it with (1.24.2).
+
 ## 0.2.2 — 2026-11-12
 
 - Clearer download names: `x86_64` for regular Windows and Linux PCs, `intel` for Intel Macs, `arm64` for ARM machines and Apple Silicon Macs.
