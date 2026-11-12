@@ -1,5 +1,10 @@
 # Release notes
 
+## 0.2.2 — 2026-11-12
+
+- Clearer download names: `x86_64` for regular Windows and Linux PCs, `intel` for Intel Macs, `arm64` for ARM machines and Apple Silicon Macs.
+- The Mac downloads now run on macOS 11 Big Sur and later (previously macOS 13 Ventura or later).
+
 ## 0.2.1 — 2026-11-12
 
 - Ready-made downloads for Windows, macOS and Linux (Intel and ARM) on the GitHub Releases page, built automatically for each new version.

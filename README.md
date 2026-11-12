@@ -21,7 +21,9 @@ Grab the build for Windows, macOS or Linux from
 go build -o buddy-tower .
 ```
 
-On macOS, if the downloaded binary is blocked, run `xattr -d com.apple.quarantine buddy-tower`.
+Pick `x86_64` for most PCs, `arm64` for ARM machines and Apple Silicon Macs, and `intel` for
+Intel Macs. The Mac builds need macOS 11 Big Sur or later; if macOS blocks the download, run
+`xattr -d com.apple.quarantine buddy-tower`.
 
 ## Use
 
