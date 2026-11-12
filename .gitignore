@@ -1,0 +1,12 @@
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+
+# build output
+/buddy-tower
+
+# example inputs and generated towers stay out of the repo
+*.3mf
+*.step
+*.stl
+*.step.tmp
